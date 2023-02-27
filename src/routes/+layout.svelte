@@ -6,19 +6,23 @@
 
 <nav>
   <MaxWidth width={"max-w-screen-xl"}>
-    <div class="py-4 flex justify-between items-center shadow-m">
+    <div class="py-4 flex justify-between items-center border-b border-black border-opacity-10">
       <div>
         <Logo />
       </div>
-      <div class="flex gap-6 text-sm ">
+      <div class="flex gap-6 text-sm">
         <a href="/product" class="hover:text-clr-green">Product</a>
         <a href="/about" class="hover:text-clr-green">Templates</a>
         <a href="/pricing" class="hover:text-clr-green">Pricing</a>
         <a href="/reviews" class="hover:text-clr-green">Reviews</a>
       </div>
       <div class="flex gap-2 text-sm">
-        <button class="px-3 py-1 font-bold bg-clr-white text-clr-green border-2 border-clr-green rounded">LOG IN</button>
-        <button class="px-3 py-1 font-bold bg-clr-green text-clr-white border-2 border-clr-green rounded">START FREE</button>
+        <button class="px-3 py-1 font-bold bg-clr-white text-clr-green border-2 border-clr-green rounded"
+          ><a href="/log-in">LOG IN</a>
+        </button>
+        <button class="px-3 py-1 font-bold bg-clr-green text-clr-white border-2 border-clr-green rounded"
+          ><a href="sign-up">START FREE</a>
+        </button>
       </div>
     </div>
   </MaxWidth>
