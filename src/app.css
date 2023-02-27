@@ -2,11 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  min-height: 100vh;
+:root {
+  --clr-green: #00b289;
+  --clr-gray: #4c4d5f;
+  --clr-white: #fff;
+  --clr-yellow: #f8db62;
 }
