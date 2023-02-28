@@ -1,7 +1,7 @@
 <script lang="ts">
   import "../components/MaxWidth.svelte";
   import MaxWidth from "../components/MaxWidth.svelte";
-  import Logo from "../img/logo.svelte";
+  import Logo from "../img/Logo.svelte";
 </script>
 
 <nav>
