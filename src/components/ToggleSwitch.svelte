@@ -1,5 +1,14 @@
+<script lang="ts">
+  import { createEventDispatcher } from "svelte";
+
+  const dispatch = createEventDispatcher();
+
+  export let switchOn = false;
+  $: dispatch("switchToggle", switchOn);
+</script>
+
 <label class="switch">
-  <input type="checkbox" />
+  <input type="checkbox" on:click={() => (switchOn = !switchOn)} />
   <span class="slider-green round" />
 </label>
 

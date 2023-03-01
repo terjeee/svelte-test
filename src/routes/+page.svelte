@@ -12,7 +12,7 @@
   export let data: Data;
   const { subscriptions } = data;
 
-  // let monthlySwitch: boolean = true;
+  let switchOn: boolean = false;
 </script>
 
 <MaxWidth width={"max-w-screen-lg"}>
@@ -21,12 +21,13 @@
       <h2 class="text-2xl">Plans & Pricing</h2>
       <div class="flex items-center gap-4 text-sm">
         <h3>MONTHLY</h3>
-        <ToggleSwitch />
+        <ToggleSwitch on:switchToggle={(event) => (switchOn = event.detail)} />
         <h3>YEARLY</h3>
+        <h2>{switchOn}</h2>
       </div>
     </section>
     <section class=" mt-10 flex gap-6 justify-between">
-      {#each data.subscriptions as plan}
+      {#each subscriptions as plan}
         <CardSubscriptionPlan {plan} />
       {/each}
     </section>
