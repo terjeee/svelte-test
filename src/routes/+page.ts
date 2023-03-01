@@ -3,8 +3,8 @@ export const load = () => {
     {
       id: "buy_workflow",
       title: "Workflow",
-      price: 19,
-      discountPercentageYearly: 10,
+      priceMonth: 19,
+      priceYear: 190,
       features: [
         "Unlimited Clients & Projects",
         "Proposals",
@@ -19,8 +19,8 @@ export const load = () => {
     {
       id: "buy_workflow_plus",
       title: "Workflow Plus",
-      price: 29,
-      discountPercentageYearly: 10,
+      priceMonth: 29,
+      priceYear: 290,
       features: [
         "Everything in Workflow, plus...",
         "White-labelled Client Experience",

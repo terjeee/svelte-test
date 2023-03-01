@@ -12,7 +12,7 @@
   export let data: Data;
   const { subscriptions } = data;
 
-  let checkedSwitch: boolean = false;
+  let checked: boolean = false;
 </script>
 
 <MaxWidth width={"max-w-screen-lg"}>
@@ -20,15 +20,14 @@
     <section class="mt-32 flex justify-between">
       <h2 class="text-2xl">Plans & Pricing</h2>
       <div class="flex items-center gap-4 text-sm">
-        <h3>MONTHLY</h3>
-        <ToggleSwitch on:checkedSwitch={(event) => (checkedSwitch = event.detail)} />
-        <h3>YEARLY</h3>
-        <h2>{checkedSwitch}</h2>
+        <h3 class={!checked ? "font-bold" : ""}>MONTHLY</h3>
+        <ToggleSwitch on:checked={(event) => (checked = event.detail)} />
+        <h3 class={checked ? "font-bold" : ""}>YEARLY</h3>
       </div>
     </section>
     <section class=" mt-10 flex gap-6 justify-between">
       {#each subscriptions as plan}
-        <CardSubscriptionPlan {plan} />
+        <CardSubscriptionPlan {plan} {checked} />
       {/each}
     </section>
   </main>

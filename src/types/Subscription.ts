@@ -1,7 +1,7 @@
 export interface SubscriptionPlan {
   id: string;
   title: string;
-  price: number;
-  discountPercentageYearly: number;
+  priceMonth: number;
+  priceYear: number;
   features: string[];
 }
