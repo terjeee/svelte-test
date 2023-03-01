@@ -3,12 +3,12 @@
 
   const dispatch = createEventDispatcher();
 
-  export let switchOn = false;
-  $: dispatch("switchToggle", switchOn);
+  export let checkedSwitch = false;
+  $: dispatch("checkedSwitch", checkedSwitch);
 </script>
 
 <label class="switch">
-  <input type="checkbox" on:click={() => (switchOn = !switchOn)} />
+  <input type="checkbox" on:click={() => (checkedSwitch = !checkedSwitch)} />
   <span class="slider-green round" />
 </label>
 
