@@ -8,3 +8,7 @@
   --clr-white: #fff;
   --clr-yellow: #f8db62;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
