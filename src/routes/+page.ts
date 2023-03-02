@@ -13,7 +13,7 @@ export const load = () => {
         "Client CRM",
         "Project Management",
         "Task & Time Tracking",
-        "IOS, Android, Chrome & Mac Apps",
+        "IOS, Android, Mac & PC",
       ],
     },
     {
@@ -22,7 +22,7 @@ export const load = () => {
       priceMonth: 29,
       priceYear: 290,
       features: [
-        "Everything in Workflow, plus...",
+        "Everything in Workflow, plus:",
         "White-labelled Client Experience",
         "Client Forms & Questionnaires",
         "Workflow Automations",
