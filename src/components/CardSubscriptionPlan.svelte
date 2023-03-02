@@ -5,19 +5,26 @@
 
   export let plan: SubscriptionPlan;
   const { id, title, priceMonth, priceYear, features } = plan;
+
   export let checked: boolean;
 </script>
 
-<article class="w-1/2 p-8 border border-black border-opacity-25 rounded">
+<article class="w-1/2 p-12  border-opacity-25 rounded shadow-card">
   <header class="border-b-2 border-clr-green">
-    <h2>{title}</h2>
-    <h4>
-      $ {checked ? priceMonth : priceYear} /{checked ? "YEAR" : "MONTH"}
+    <h2 class="text-lg font-bold">{title}</h2>
+    <h4 class="py-4">
+      <span class="align-top">$</span>
+      <span class="px-2 text-4xl font-bold">
+        {checked ? priceMonth : priceYear}
+      </span>
+      <span class="align-bottom tracking-wide">
+        /{checked ? "MONTH" : "YEAR"}
+      </span>
     </h4>
   </header>
   <ul class="py-6">
     {#each features as feature}
-      <li class="py-2 flex items-center gap-2">
+      <li class="py-2.5 flex items-center gap-2 tracking-tight">
         <CheckMark />
         <span class="text-sm">
           {feature}
@@ -25,5 +32,8 @@
       </li>
     {/each}
   </ul>
-  <button id={`${id + "_" + checked ? "month" : "year"}`}>START HERE</button>
+  <button
+    class="py-3 w-full font-bold bg-clr-green text-sm text-clr-white border-2 border-clr-green rounded"
+    id={`${id + "_" + checked ? "month" : "year"}`}>START HERE</button
+  >
 </article>
