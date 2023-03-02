@@ -16,8 +16,8 @@
         <a href="/pricing" class="hover:text-clr-green">Pricing</a>
         <a href="/reviews" class="hover:text-clr-green">Reviews</a>
       </div>
-      <div class="flex gap-2 text-sm">
-        <button class="px-3 py-1 font-bold bg-clr-white text-clr-green border-2 border-clr-green rounded"
+      <div class="flex gap-2 text-xs">
+        <button class="px-3 py-1.5 font-bold bg-clr-white text-clr-green border-2 border-clr-green rounded"
           ><a href="/log-in">LOG IN</a>
         </button>
         <button class="px-3 py-1 font-bold bg-clr-green text-clr-white border-2 border-clr-green rounded"
