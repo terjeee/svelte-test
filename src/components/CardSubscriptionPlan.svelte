@@ -15,10 +15,10 @@
     <h4 class="py-4">
       <span class="align-top">$</span>
       <span class="px-2 text-4xl font-bold">
-        {checked ? priceMonth : priceYear}
+        {checked ? priceYear : priceMonth}
       </span>
       <span class="align-bottom tracking-wide">
-        /{checked ? "MONTH" : "YEAR"}
+        /{checked ? "YEAR" : "MONTH"}
       </span>
     </h4>
   </header>

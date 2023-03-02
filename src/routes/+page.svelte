@@ -19,7 +19,6 @@
       <div class="flex items-center gap-4 text-xs tracking-wider">
         <h3 class={!checked ? "font-bold" : ""}>MONTHLY</h3>
         <ToggleSwitch on:checked={(event) => (checked = event.detail)} />¨
-        {checked}
         <h3 class={checked ? "font-bold" : ""}>YEARLY</h3>
       </div>
     </section>
