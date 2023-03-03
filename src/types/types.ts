@@ -5,3 +5,8 @@ export interface SubscriptionPlan {
   priceYear: number;
   features: string[];
 }
+
+export interface Faq {
+  question: string;
+  answer: string;
+}
