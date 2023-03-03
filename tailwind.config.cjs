@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         "clr-green": "var(--clr-green)",
+        "clr-blue": "var(--clr-blue)",
         "clr-gray": "var(--clr-gray)",
         "clr-white": "var(--clr-white)",
         "clr-yellow": "var(--clr-yellow)",
