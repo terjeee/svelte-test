@@ -1,7 +1,7 @@
 <script lang="ts">
-  import type { SubscriptionPlan } from "../types/Subscription";
+  import type { SubscriptionPlan } from "../../types/types";
 
-  import CheckMark from "../img/CheckMark.svelte";
+  import CheckMark from "../../img/SvgCheckMark.svelte";
 
   export let plan: SubscriptionPlan;
   const { id, title, priceMonth, priceYear, features } = plan;
@@ -13,7 +13,7 @@
   <header class="border-b-2 border-clr-green">
     <h2 class="text-lg font-bold">{title}</h2>
     <h4 class="py-4">
-      <span class="align-top">$</span>
+      <span class="text-xl align-top">$</span>
       <span class="px-2 text-4xl font-bold">
         {checked ? priceYear : priceMonth}
       </span>
