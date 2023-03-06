@@ -12,7 +12,7 @@
       <div>
         <Logo />
       </div>
-      <div class="flex gap-6 text-sm">
+      <div class="hidden md:flex gap-6 text-sm">
         <a href="/" class="hover:text-clr-green">Product</a>
         <a href="/" class="hover:text-clr-green">Templates</a>
         <a href="/" class="hover:text-clr-green">Pricing</a>
