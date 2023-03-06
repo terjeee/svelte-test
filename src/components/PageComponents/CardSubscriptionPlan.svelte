@@ -9,7 +9,7 @@
   export let checked: boolean;
 </script>
 
-<article class="w-1/2 p-12  border-opacity-25 rounded shadow-card">
+<article class="w-100 py-14 px-10 border-opacity-25 rounded shadow-card sm:w-1/2 sm:p-dynamic md:p-14">
   <header class="border-b-2 border-clr-green">
     <h2 class="text-lg font-bold">{title}</h2>
     <h4 class="py-4">
@@ -26,7 +26,7 @@
     {#each features as feature}
       <li class="py-2.5 flex items-center gap-2 tracking-tight">
         <CheckMark />
-        <span class="text-sm">
+        <span class="text-dynamic-xs sm:text-sm">
           {feature}
         </span>
       </li>
