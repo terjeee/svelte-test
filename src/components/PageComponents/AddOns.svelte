@@ -1,4 +1,4 @@
-<section class="mt-24 mb-20">
+<section class="my-16 sm:my-24">
   <h2 class="mb-14 first-line:font-lora text-2xl text-center">Super charge your work with add-ons</h2>
   <div class="flex-col">
     <article class="mb-6 p-6 flex justify-between shadow-card rounded">
