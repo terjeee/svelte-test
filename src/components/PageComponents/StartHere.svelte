@@ -1,4 +1,4 @@
-<article class="px-12 py-14 flex justify-between bg-clr-blue">
+<article class="px-12 py-14 flex flex-wrap justify-between gap-6 bg-clr-blue">
   <div class="text-xl">
     <h5>It's <span class="text-clr-green">your</span> business.</h5>
     <h5>We're here to help you grow</h5>
